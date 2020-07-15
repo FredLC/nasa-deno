@@ -52,7 +52,7 @@ async function loadPlanetsData() {
 }
 
 planets = await loadPlanetsData();
-console.log(`${planets.length} habitable planets found`);
+log.info(`${planets.length} habitable planets found`);
 
 export function getAllPlanets() {
   return planets;
@@ -62,6 +62,6 @@ export function getAllPlanets() {
 // });
 // const longestOrbitalPeriod = Math.round(Math.max(...orbitalPeriods));
 // const shortestOrbitalPeriod = Math.round(Math.min(...orbitalPeriods));
-// console.log(orbitalPeriods);
-// console.log(longestOrbitalPeriod);
-// console.log(shortestOrbitalPeriod);
+// log.info(orbitalPeriods);
+// log.info(longestOrbitalPeriod);
+// log.info(shortestOrbitalPeriod);
