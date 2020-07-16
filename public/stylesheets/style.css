@@ -10,9 +10,17 @@ body {
   font-size: 15pt;
   min-width: 60em;
 }
-a { outline:0; }
-main, figure, figcaption { display:block; }
-header, main, footer {
+a {
+  outline: 0;
+}
+main,
+figure,
+figcaption {
+  display: block;
+}
+header,
+main,
+footer {
   -webkit-text-size-adjust: none;
 }
 body {
@@ -34,18 +42,20 @@ a {
   text-decoration: none;
   color: #0088cc;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #a0c1e6;
   cursor: pointer;
 }
-h1, h2 {
+h1,
+h2 {
   font-size: 1em;
   font-weight: normal;
   font-family: 'Space Mono', monospace;
 }
 
 .quiet {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .form-item {
@@ -73,18 +83,20 @@ header h1 {
   margin: 0;
   padding-right: 1em;
 }
-header h1 a, header h1 span {
+header h1 a,
+header h1 span {
   display: inline-block;
   text-decoration: none;
   color: #0090e6;
   text-shadow: 0 0 2px #0090e6, 0 0 5px #0090e6;
 }
-header h1 a:hover, header h1 a:focus {
+header h1 a:hover,
+header h1 a:focus {
   color: #97c0ef;
   text-shadow: 0 0 2px #97c0ef, 0 0 5px #97c0ef;
 }
 header h1.title-event .title-event-wrap {
-  opacity: .33;
+  opacity: 0.33;
   white-space: pre;
 }
 header nav {
@@ -98,7 +110,7 @@ header nav ul {
 }
 header nav li {
   display: inline-block;
-  padding: 0 .6em;
+  padding: 0 0.6em;
 }
 header nav a {
   display: inline-block;
@@ -106,7 +118,10 @@ header nav a {
   outline: none;
 }
 
-input[type="text"], textarea, select, input[type="date"] {
+input[type='text'],
+textarea,
+select,
+input[type='date'] {
   background: transparent;
   color: inherit;
   border: 1px solid #666666;
@@ -128,7 +143,7 @@ label {
 }
 *::-moz-focus-inner {
   padding: 0;
-  border: 0
+  border: 0;
 }
 
 .silver {
@@ -154,7 +169,8 @@ label {
   min-height: 1.35em;
   white-space: pre;
 }
-.list-item:hover, .list-item:active {
+.list-item:hover,
+.list-item:active {
   background-color: #1e1e46;
 }
 .list-heading {
@@ -167,4 +183,15 @@ label {
 
 .sponsor {
   margin: 1em 0;
+}
+
+#space-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.45;
 }
